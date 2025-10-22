@@ -1,74 +1,83 @@
-=============================
- AVENTURA ESPACIAL (PC EDITION)
-=============================
+🛸 Aventura Espacial (PC Edition)
 
 Um jogo 2D arcade feito em Python + Pygame Zero.
 Controle sua nave, destrua inimigos e desvie de meteoros!
 
----------------------------------
- FUNCIONALIDADES
----------------------------------
-- Controle com o mouse
-- Dificuldades: fácil, médio e difícil
-- Efeitos sonoros (tiro, game over)
-- Música de fundo 8-bit
-- Menu inicial e tela de fim de jogo
-- Totalmente portátil (sem caminhos fixos)
+🚀 Funcionalidades
 
----------------------------------
- ESTRUTURA DE PASTAS
----------------------------------
+Controle com o mouse
+
+Dificuldades: fácil, médio e difícil
+
+Efeitos sonoros (tiro, game over)
+
+Música de fundo estilo 8-bit retrô
+
+Menu inicial e tela de fim de jogo
+
+Totalmente portátil (sem caminhos fixos)
+
+📁 Estrutura de Pastas
 Aventura_Espacial/
 │
-├── launcher.py           -> menu inicial estilizado
-├── index.py              -> jogo principal
+├── launcher.py           → menu inicial estilizado
+├── index.py              → jogo principal
 │
-├── images/               -> sprites do jogo
+├── images/               → sprites do jogo
 │   ├── ship.png
 │   ├── enemy.png
 │   ├── meteor.png
 │   ├── bullet.png
 │   └── space.jpg
 │
-└── sounds/               -> efeitos e músicas
+└── sounds/               → efeitos e músicas
     ├── tiro.wav
     ├── gameover.wav
     └── musica_fundo_8bit.mp3
 
----------------------------------
- COMO RODAR NO WINDOWS
----------------------------------
-1. Instale o Python 3.11 ou superior.
-2. Instale as dependências:
-   pip install pygame pgzero
-3. Execute o menu inicial:
-   python launcher.py
-4. Ou execute o jogo direto:
-   pgzrun index.py
+🧠 Como Rodar no Windows
 
----------------------------------
- GERAR EXECUTÁVEL (EXE)
----------------------------------
-1. Instale o PyInstaller:
-   pip install pyinstaller
+Instale o Python 3.11+
 
-2. Gere o arquivo .exe com:
-   pyinstaller --onefile --noconsole --add-data "images;images" --add-data "sounds;sounds" --icon "icon.ico" --name "AventuraEspacial" launcher.py
+Instale as dependências:
 
-O executável será criado na pasta:
-   dist\AventuraEspacial.exe
+pip install pygame pgzero
 
----------------------------------
- CRÉDITOS
----------------------------------
-- Programador: Totoi
-- Engine: Pygame Zero + Pygame
-- Edição Deluxe: ChatGPT Game Assistant
 
----------------------------------
- DICA
----------------------------------
-Coloque a pasta "Aventura_Espacial" inteira no mesmo local do EXE
+Execute o menu inicial:
+
+python launcher.py
+
+
+Ou execute o jogo direto:
+
+pgzrun index.py
+
+🏗️ Gerar Executável (.exe)
+
+Instale o PyInstaller:
+
+pip install pyinstaller
+
+
+Gere o executável com:
+
+pyinstaller --onefile --noconsole --add-data "images;images" --add-data "sounds;sounds" --icon "icon.ico" --name "AventuraEspacial" launcher.py
+
+
+O executável ficará em:
+
+dist/AventuraEspacial.exe
+
+👨‍💻 Créditos
+
+Programador: Totoi
+
+Engine: Pygame Zero + Pygame
+
+Edição Deluxe: ChatGPT Game Assistant
+
+💡 Dica
+
+Coloque a pasta Aventura_Espacial completa no mesmo diretório do .exe
 para garantir que as imagens e sons sejam encontrados corretamente.
-
-=================================
